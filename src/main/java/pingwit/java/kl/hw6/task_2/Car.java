@@ -1,4 +1,4 @@
-package hw6.task_2;
+package pingwit.java.kl.hw6.task_2;
 
 //+- не хватает конструктора и методов
 public class Car {

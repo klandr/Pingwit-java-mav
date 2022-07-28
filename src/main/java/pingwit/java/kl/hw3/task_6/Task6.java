@@ -1,4 +1,4 @@
-package hw3.task_6;
+package pingwit.java.kl.hw3.task_6;
 
 import java.util.Arrays;
 

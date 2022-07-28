@@ -1,4 +1,4 @@
-package hw6.task_2_try_variant2;
+package pingwit.java.kl.hw6.task_2_try_variant2;
 
 //+- как тестовый класс может быть, но интересует как двигатель будет вести себя в машине
 public class EngineMain {

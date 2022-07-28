@@ -1,4 +1,4 @@
-package hw3.task_2;
+package pingwit.java.kl.hw3.task_2;
 
 //+ код не отформатирован
 public class Task2 {

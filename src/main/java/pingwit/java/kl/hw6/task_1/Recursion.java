@@ -1,4 +1,4 @@
-package hw6.task_1;
+package pingwit.java.kl.hw6.task_1;
 
 import java.io.OptionalDataException;
 import java.util.Arrays;

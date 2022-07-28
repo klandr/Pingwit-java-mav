@@ -1,4 +1,4 @@
-package hw2.task_9;
+package pingwit.java.kl.hw2.task_9;
 
 //+- код не отформатирован
 //Необходимые треугольники не выводятся

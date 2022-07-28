@@ -1,4 +1,4 @@
-package hw12.task_4;
+package pingwit.java.kl.hw12.task_4;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package hw1.Point4;
+package pingwit.java.kl.hw1.Point4;
 
 public class TypeCasting {
     public static void main(String[] args) {

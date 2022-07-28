@@ -1,4 +1,4 @@
-package hw2.task_4;
+package pingwit.java.kl.hw2.task_4;
 
 //+
 public class Task4 {

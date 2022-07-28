@@ -1,4 +1,4 @@
-package hw12.task_2;
+package pingwit.java.kl.hw12.task_2;
 import java.util.function.Function;
 
 //+

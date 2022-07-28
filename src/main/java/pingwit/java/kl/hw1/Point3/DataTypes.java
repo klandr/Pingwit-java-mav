@@ -1,4 +1,4 @@
-package hw1.Point3;
+package pingwit.java.kl.hw1.Point3;
 
 //test
 public class DataTypes {

@@ -1,4 +1,4 @@
-package hw12;
+package pingwit.java.kl.hw12;
 
 import java.util.function.Supplier;
 

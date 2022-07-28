@@ -1,4 +1,4 @@
-package hw7;
+package pingwit.java.kl.hw7;
 
 //+- каждое задание должно быть в отдельном пакете, название класса должно быть в CamelCase, т.е. Task1 - относится ко всей домашке
 public class task_1 {

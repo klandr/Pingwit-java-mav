@@ -1,4 +1,4 @@
-package hw8.task_1;
+package pingwit.java.kl.hw8.task_1;
 
 //+- Название класса должно быть Task1
 public class Task1 {

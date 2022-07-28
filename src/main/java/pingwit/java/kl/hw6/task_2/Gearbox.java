@@ -1,4 +1,4 @@
-package hw6.task_2;
+package pingwit.java.kl.hw6.task_2;
 
 //- для хранения состояния коробки достаточно одной переменной с числом - текущая передача
 public class Gearbox {

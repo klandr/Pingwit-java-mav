@@ -1,4 +1,4 @@
-package hw4.task_1;
+package pingwit.java.kl.hw4.task_1;
 
 public class CreateBaseNameAge {
     public static void main(String[] args) {

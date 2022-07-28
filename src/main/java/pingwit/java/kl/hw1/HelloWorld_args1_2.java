@@ -1,4 +1,4 @@
-package hw1;
+package pingwit.java.kl.hw1;
 
 public class HelloWorld_args1_2 {
     public static void main(String[] args) {

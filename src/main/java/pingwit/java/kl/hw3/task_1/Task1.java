@@ -1,4 +1,4 @@
-package hw3.task_1;
+package pingwit.java.kl.hw3.task_1;
 
 import java.util.Scanner;
 

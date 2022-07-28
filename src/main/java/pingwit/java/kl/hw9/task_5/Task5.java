@@ -1,4 +1,4 @@
-package hw9.task_5;
+package pingwit.java.kl.hw9.task_5;
 //Task 5
 //Продолжение Task_4. А теперь поменяйте любое приватное поле Work/Employee на паблик.
 //Попробуйте восстановить файл из Task 4 в объект.

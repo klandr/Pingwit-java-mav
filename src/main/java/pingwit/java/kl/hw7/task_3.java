@@ -1,4 +1,4 @@
-package hw7;
+package pingwit.java.kl.hw7;
 
 //+
 public class task_3 {

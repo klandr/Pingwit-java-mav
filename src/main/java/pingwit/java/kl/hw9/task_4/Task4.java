@@ -1,4 +1,4 @@
-package hw9.task_4;
+package pingwit.java.kl.hw9.task_4;
 //Task 4
 //Создайте класс Employee, Work. У Work есть атрибуты название и минимальный стаж.
 //У Employee есть имя, возраст и работа (work).

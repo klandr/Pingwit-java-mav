@@ -1,4 +1,4 @@
-package hw6.task_2_try_variant2;
+package pingwit.java.kl.hw6.task_2_try_variant2;
 
 //Я так понимаю, что этот класс тут случайно оказался 
 public class PrakticeMain {

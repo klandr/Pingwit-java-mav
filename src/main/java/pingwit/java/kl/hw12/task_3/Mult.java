@@ -1,4 +1,4 @@
-package hw12.task_3;
+package pingwit.java.kl.hw12.task_3;
 import java.util.function.BinaryOperator;
 
 //+

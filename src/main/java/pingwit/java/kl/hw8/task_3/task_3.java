@@ -1,4 +1,4 @@
-package hw8.task_3;
+package pingwit.java.kl.hw8.task_3;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;

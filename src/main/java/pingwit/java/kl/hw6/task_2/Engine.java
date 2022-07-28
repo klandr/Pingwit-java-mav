@@ -1,4 +1,4 @@
-package hw6.task_2;
+package pingwit.java.kl.hw6.task_2;
 
 // Интересная затея, но нет. Твой мотор должен иметь состояние вкл-выкл, для этого достаточно одного boolean поля
 public class Engine {

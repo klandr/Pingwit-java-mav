@@ -1,4 +1,4 @@
-package hw2.task_2;
+package pingwit.java.kl.hw2.task_2;
 
 //+-
 //Не забываем форматировать код: for должно быть на уровне int a

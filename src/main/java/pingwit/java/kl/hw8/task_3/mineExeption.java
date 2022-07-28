@@ -1,4 +1,4 @@
-package hw8.task_3;
+package pingwit.java.kl.hw8.task_3;
 
 //+- Название класса с большой буквы. Имя может быть IncoppertArraySizeException. Исключение не используется в main
 public class mineExeption extends Exception{

@@ -1,4 +1,4 @@
-package hw2.task_3;
+package pingwit.java.kl.hw2.task_3;
 
 //Task 3
 //Вычислить: 1+2+4+8+...+256

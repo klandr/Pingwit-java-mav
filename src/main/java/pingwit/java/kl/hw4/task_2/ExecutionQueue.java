@@ -1,4 +1,4 @@
-package hw4.task_2;
+package pingwit.java.kl.hw4.task_2;
 
 //+- не хватает ответа на вопрос задания
 public class ExecutionQueue {

@@ -1,4 +1,4 @@
-package hw12.task_1;
+package pingwit.java.kl.hw12.task_1;
 
 import java.util.ArrayList;
 import java.util.Date;
