@@ -9,5 +9,6 @@
         <module name="pingwit-java-maven" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
   </component>
 </project>

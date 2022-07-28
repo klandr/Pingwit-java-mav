@@ -12,6 +12,8 @@
 
   <properties>
     <jackson.version>2.13.3</jackson.version>
+    <maven.compiler.source>17.0.2</maven.compiler.source>
+    <maven.compiler.target>17.0.2</maven.compiler.target>
   </properties>
 
   <dependencyManagement>
@@ -29,6 +31,12 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
