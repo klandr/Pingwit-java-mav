@@ -23,7 +23,8 @@ public class JdbcCompany {
                         rs.getString(5), rs.getString(6));
                 companies.add(company);
             }
-            System.out.println(companies);
+            //System.out.println(companies);
+            companies.forEach(System.out::println);
         }
     }
 }
