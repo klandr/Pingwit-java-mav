@@ -1,7 +1,7 @@
 // Оригінальний код: https://tinyurl.com/o8ry24f
 package sets;
 
-//нам потрібні інтерфейс Set (множина) і клас TreeSet, який його реалізує
+//нам потрібний інтерфейс Set (множина) і клас TreeSet, який його реалізує
 import java.util.Set;
 // детальніше про TreeSet - відсортовану множину - https://www.codeflow.site/ru/article/java-tree-set
 import java.util.TreeSet;
