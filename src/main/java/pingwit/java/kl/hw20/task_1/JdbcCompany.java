@@ -10,11 +10,12 @@ public class JdbcCompany {
     private static final String URL ="jdbc:postgresql://localhost:5432/first_dat";
     private static final String USER ="postgres";
     private static final String PASSWORD = "docker";
+
         public void runQuery() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
         try (Connection connection = DriverManager.getConnection(URL,USER,PASSWORD)){
            Statement statement = connection.createStatement();
-           ResultSet rs = statement.executeQuery("SELECT * FROM 100_actions");
+           ResultSet rs = statement.executeQuery("SELECT * FROM actions");
 
            List <Company> companies = new ArrayList<>();
 
