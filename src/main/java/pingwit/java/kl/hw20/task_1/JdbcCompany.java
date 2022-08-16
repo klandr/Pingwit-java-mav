@@ -5,6 +5,7 @@ package pingwit.java.kl.hw20.task_1;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import org.postgresql.Driver;
 
 public class JdbcCompany {
     private static final String URL ="jdbc:postgresql://localhost:5432/first_dat";
