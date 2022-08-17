@@ -1,4 +1,4 @@
-package pingwit.java.kl.hw20.task_1;
+package com.pingwit.kl.task_1;
 
 import java.sql.SQLException;
 
