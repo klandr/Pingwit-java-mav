@@ -1,4 +1,4 @@
-package com.pingwit.kl.task_1;
+package com.pingwit.kl.hw20.task_1;
 
 import java.sql.*;
 import java.util.ArrayList;
