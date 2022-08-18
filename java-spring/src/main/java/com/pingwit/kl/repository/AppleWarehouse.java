@@ -31,4 +31,7 @@ public class AppleWarehouse {
         storage.put(11L,new Apple(11L,"Antonovka","green ", 50 ,18D));
         storage.put(12L,new Apple(12L,"Antonovka","green ", 50 ,10D));
     }
+    public Apple getById(Long id){
+        return storage.get(id);
+    }
 }
