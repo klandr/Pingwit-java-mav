@@ -11,25 +11,30 @@ import com.pingwit.kl.repository.AppleWarehouse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLException;
+import java.util.List;
+
 @Service
 public class AppleServise {
+    @Autowired
     private final AppleWarehouse appleWarehouse;
+    @Autowired
     private final AppleDtoConverter appleDtoConverter;
 
-    @Autowired
     public AppleServise(AppleWarehouse appleWarehouse, AppleDtoConverter appleDtoConverter) {
         this.appleWarehouse = appleWarehouse;
         this.appleDtoConverter = appleDtoConverter;
     }
 
-    public AppleServise(){
-        System.out.println("hi from constructor");
-        appleWarehouse = null;
-        appleDtoConverter = null;
+
+
+   public List<AppleDto> getById(Long id) throws SQLException, ClassNotFoundException {
+        List<Apple> appleById = appleWarehouse.getById(id);
+        return appleById.stream().map(appleDtoConverter::convert).toList();
     }
 
-    public AppleDto getById(Long id){
-        Apple apple = appleWarehouse.getById(id);
-        return appleDtoConverter.convert(apple);
+    public List<AppleDto> getAllApplies() throws SQLException, ClassNotFoundException {
+        List<Apple> allApplies = appleWarehouse.getAll();
+        return allApplies.stream().map(appleDtoConverter::convert).toList();
     }
 }

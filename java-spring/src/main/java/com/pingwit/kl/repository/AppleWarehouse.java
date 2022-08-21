@@ -1,37 +1,60 @@
 package com.pingwit.kl.repository;
 
-//@Service
-//@Component
-//@Repository //<--this bin
-
 import com.pingwit.kl.entity.Apple;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.PostConstruct;
-import java.util.HashMap;
-import java.util.Map;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Repository
 public class AppleWarehouse {
-    private Map<Long, Apple> storage = new HashMap<>();
+    private static final String URL = "jdbc:postgresql://localhost:5432/first_dat";
+    private static final String USER = "postgres";
+    private static final String PASSWORD = "docker";
+    private static final String a = "*";
 
-    @PostConstruct
-    private void init(){
-        System.out.println("Hi, from PostConstruct!");
-        storage.put(1L,new Apple(1L,"Naliv","white ", 75 ,133.5));
-        storage.put(2L,new Apple(2L," Golden","red ", 60 , 180D));
-        storage.put(3L,new Apple(3L,"pineapple","green ", 40 ,56D));
-        storage.put(4L,new Apple(4L,"Prince","green ", 35 ,48D));
-        storage.put(5L,new Apple(5L,"Antonovka","green ", 50 ,200D));
-        storage.put(6L,new Apple(6L,"Prince","green ", 70 ,70.5));
-        storage.put(7L,new Apple(7L,"Golden","red ", 100 ,99D));
-        storage.put(8L,new Apple(8L,"Naliv","white ", 75 ,20D));
-        storage.put(9L,new Apple(9L,"Naliv","white ", 75 ,18D));
-        storage.put(10L,new Apple(10L,"Antonovka","green ", 50 ,15.5D));
-        storage.put(11L,new Apple(11L,"Antonovka","green ", 50 ,18D));
-        storage.put(12L,new Apple(12L,"Antonovka","green ", 50 ,10D));
+    public List<Apple> getAll() throws ClassNotFoundException, SQLException {
+        Class.forName("org.postgresql.Driver");
+        List<Apple> applies;
+        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery("SELECT * FROM apple_warehouse");
+
+            applies = new ArrayList<>();
+            //Map<Long, Apple> applies = new HashMap<>();
+
+            while (rs.next()) {
+                Apple apple = new Apple(rs.getLong(1), rs.getString(2),
+                        rs.getString(3), rs.getInt(4),
+                        rs.getDouble(5));
+                applies.add(apple);
+            }
+            //System.out.println(applies);
+            applies.forEach(System.out::println);
+        }
+        return applies;
     }
-    public Apple getById(Long id){
-        return storage.get(id);
+
+    public List<Apple> getById(Long Id) throws ClassNotFoundException, SQLException {
+        Class.forName("org.postgresql.Driver");
+        List<Apple> applies;
+        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery("SELECT * FROM apple_warehouse WHERE name = Prince");
+
+            applies = new ArrayList<>();
+            //Map<Long, Apple> applies = new HashMap<>();
+
+            while (rs.next()) {
+                Apple apple = new Apple(rs.getLong(1), rs.getString(2),
+                        rs.getString(3), rs.getInt(4),
+                        rs.getDouble(5));
+                applies.add(apple);
+            }
+            //System.out.println(applies);
+            applies.forEach(System.out::println);
+        }
+        return applies;
     }
 }
