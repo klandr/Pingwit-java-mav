@@ -12,7 +12,6 @@ public class AppleWarehouse {
     private static final String URL = "jdbc:postgresql://localhost:5432/first_dat";
     private static final String USER = "postgres";
     private static final String PASSWORD = "docker";
-    private static final String a = "*";
 
     public List<Apple> getAll() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
@@ -22,7 +21,6 @@ public class AppleWarehouse {
             ResultSet rs = statement.executeQuery("SELECT * FROM apple_warehouse");
 
             applies = new ArrayList<>();
-            //Map<Long, Apple> applies = new HashMap<>();
 
             while (rs.next()) {
                 Apple apple = new Apple(rs.getLong(1), rs.getString(2),
@@ -30,7 +28,6 @@ public class AppleWarehouse {
                         rs.getDouble(5));
                 applies.add(apple);
             }
-            //System.out.println(applies);
             applies.forEach(System.out::println);
         }
         return applies;
@@ -41,10 +38,9 @@ public class AppleWarehouse {
         List<Apple> applies;
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
             Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("SELECT * FROM apple_warehouse WHERE name = Prince");
+            ResultSet rs = statement.executeQuery("SELECT * FROM apple_warehouse Where id = "+ Id);
 
             applies = new ArrayList<>();
-            //Map<Long, Apple> applies = new HashMap<>();
 
             while (rs.next()) {
                 Apple apple = new Apple(rs.getLong(1), rs.getString(2),
@@ -52,7 +48,6 @@ public class AppleWarehouse {
                         rs.getDouble(5));
                 applies.add(apple);
             }
-            //System.out.println(applies);
             applies.forEach(System.out::println);
         }
         return applies;
