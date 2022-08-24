@@ -27,7 +27,7 @@ public class LaptopController {
         return laptopService.findAll();
     }
 
-    @GetMapping("/all/page")
+    @GetMapping("/all/page")// /all/page?size=1&page=0
     public Page<LaptopDto> findPage(@RequestParam int page, @RequestParam int size) {
         return laptopService.findPage(PageRequest.of(page, size));
     }
