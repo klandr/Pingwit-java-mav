@@ -1,10 +1,10 @@
-package com.pingwit.kl.repository;
+package com.pingwit.kl.hw21.repository;
 
 //@Service
 //@Component
 //@Repository //<--this bin
 
-import com.pingwit.kl.entity.Apple;
+import com.pingwit.kl.hw21.entity.Apple;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;

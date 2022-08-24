@@ -1,7 +1,7 @@
-package com.pingwit.kl.converter;
+package com.pingwit.kl.hw21.converter;
 
-import com.pingwit.kl.dto.AppleDto;
-import com.pingwit.kl.entity.Apple;
+import com.pingwit.kl.hw21.dto.AppleDto;
+import com.pingwit.kl.hw21.entity.Apple;
 
 //@Service
 //@Component //<--this bin
