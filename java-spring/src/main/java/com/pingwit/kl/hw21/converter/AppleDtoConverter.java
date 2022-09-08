@@ -3,10 +3,7 @@ package com.pingwit.kl.hw21.converter;
 import com.pingwit.kl.hw21.dto.AppleDto;
 import com.pingwit.kl.hw21.entity.Apple;
 
-//@Service
-//@Component //<--this bin
-//Repository
-
+//@Component //<--this bean, bean wrote in file config
 
 public class AppleDtoConverter {
     public AppleDto convert (Apple apple){

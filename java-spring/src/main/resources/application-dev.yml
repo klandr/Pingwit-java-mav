@@ -1,0 +1,26 @@
+pingwit.server:
+  name: "Chupakabra from yml"
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/first_dat
+    username: postgres
+    password: docker
+
+#
+ua.email:
+  from: pozand47@gmail.com
+  signature: "\n\n King regards \nPingwit"
+
+
+#  from: pingwittest@gmail.com
+
+# spring.mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: pozand47@gmail.com
+#    password: ylyfraheoywdbuif
+#    properties.mail.smtp.auth: true
+#    properties.mail.smtp.starttls.enable: true
+#    properties.mail.smtp.ssl.trust: smtp.gmail.com
