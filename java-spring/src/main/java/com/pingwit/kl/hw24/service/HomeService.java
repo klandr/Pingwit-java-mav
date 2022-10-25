@@ -3,7 +3,10 @@ package com.pingwit.kl.hw24.service;
 import com.pingwit.kl.hw24.converter.HomeConverter;
 import com.pingwit.kl.hw24.dto.HomeDto;
 import com.pingwit.kl.hw24.repository.HomeRepository;
+import com.pingwit.kl.hw24.entity.HomeType;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class HomeService {
@@ -18,7 +21,7 @@ public class HomeService {
         return repository.save(converter.toLocal(dto)).getId();
     }
 
-//    public List<HomeDto> findAllByHomeType(HomeType type){
-//        repository.findAllByHomeType(type).stream().map()
-//    }
+    public List<HomeDto> findAllByHomeType(HomeType homeType){
+        return repository.findAllByHomeType(homeType).stream().map(converter::toFront).toList();
+    }
 }

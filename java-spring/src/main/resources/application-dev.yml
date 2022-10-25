@@ -7,6 +7,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/first_dat
     username: postgres
     password: docker
+  liquibase:
+    change-log: "classpath:db/changelog/changelog.xml"
+    enabled: false
+    jpa:
+      show-sql: true
 
 #
 ua.email:
