@@ -1,0 +1,92 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="And (generated)" id="1663005781580-1">
+        <createTable tableName="car">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="car_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="color" type="VARCHAR(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="engine_volume" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+            <column name="wheel_side" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="And (generated)" id="1663005781580-2">
+        <createTable tableName="student">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="student_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="course" type="VARCHAR(10)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="And (generated)" id="1663005781580-3">
+        <createTable tableName="actions">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="100_actions_pkey"/>
+            </column>
+            <column name="ticker" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="company_name" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="profit_year" type="numeric"/>
+            <column name="location" type="VARCHAR"/>
+            <column name="update_date_time" type="date"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="And (generated)" id="1663005781580-4">
+        <createTable tableName="apple_warehouse">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="apple_warehouse_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR"/>
+            <column name="color" type="VARCHAR"/>
+            <column name="quantity" type="numeric"/>
+            <column name="price" type="numeric"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="And (generated)" id="1663005781580-5">
+        <createTable tableName="home">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="house_pkey"/>
+            </column>
+            <column name="home_type" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="floor_number" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="entrance_number" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="And (generated)" id="1663005781580-6">
+        <createTable tableName="123"/>
+    </changeSet>
+    <changeSet author="And (generated)" id="1663005781580-7">
+        <createTable tableName="laptop">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="Laptop_pkey"/>
+            </column>
+            <column name="producer" type="VARCHAR"/>
+            <column name="processor" type="VARCHAR"/>
+            <column name="price" type="numeric"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
